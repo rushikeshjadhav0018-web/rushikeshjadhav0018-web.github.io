@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
 }
 
+/* NAVBAR */
 nav {
     position: sticky;
     top: 0;
@@ -53,6 +54,7 @@ nav a:hover {
     color: #4da3ff;
 }
 
+/* HERO */
 .hero {
     min-height: 88vh;
     display: flex;
@@ -101,6 +103,7 @@ nav a:hover {
     background: #2690f0;
 }
 
+/* SECTIONS */
 section {
     padding: 80px 8%;
 }
@@ -111,6 +114,7 @@ section {
     margin-bottom: 45px;
 }
 
+/* ABOUT */
 .about {
     max-width: 900px;
     margin: auto;
@@ -119,6 +123,7 @@ section {
     font-size: 17px;
 }
 
+/* SKILLS */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +141,7 @@ section {
     color: #dce9f7;
 }
 
+/* PROJECTS */
 .project {
     max-width: 1150px;
     margin: 0 auto 70px;
@@ -181,6 +187,7 @@ section {
     margin-bottom: 6px;
 }
 
+/* IMAGE GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -201,6 +208,7 @@ section {
     transform: scale(1.02);
 }
 
+/* CONTACT */
 .contact {
     text-align: center;
     background: #091625;
@@ -217,6 +225,7 @@ section {
     margin: 0 12px;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 25px;
@@ -224,7 +233,9 @@ footer {
     border-top: 1px solid #1d3048;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
+
     nav {
         padding: 15px 5%;
     }
@@ -258,6 +269,7 @@ footer {
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
     <div class="logo">Rushikesh Jadhav</div>
 
@@ -269,27 +281,41 @@ footer {
     </div>
 </nav>
 
+
 <!-- HERO -->
 <section class="hero">
     <div>
-        <h1>Hi, I'm <span>Rushikesh Jadhav</span></h1>
 
-        <h2>Data Analyst | Power BI Developer</h2>
+        <h1>
+            Hi, I'm <span>Rushikesh Jadhav</span>
+        </h1>
+
+        <h2>
+            Data Analyst | Power BI Developer
+        </h2>
 
         <p>
             I build interactive dashboards and business-focused analytics
             solutions using Power BI, DAX, SQL, Excel and Python.
         </p>
 
-        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#projects" class="btn">
+            View My Projects
+        </a>
+
     </div>
 </section>
 
+
 <!-- ABOUT -->
 <section id="about">
-    <h2 class="section-title">About Me</h2>
+
+    <h2 class="section-title">
+        About Me
+    </h2>
 
     <div class="about">
+
         <p>
             I am a Data Analyst and Power BI professional with experience in
             dashboard development, data visualization, business reporting and
@@ -303,14 +329,21 @@ footer {
             businesses understand performance, identify trends and make
             data-driven decisions.
         </p>
+
     </div>
+
 </section>
+
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2 class="section-title">Skills</h2>
+
+    <h2 class="section-title">
+        Skills
+    </h2>
 
     <div class="skills">
+
         <div class="skill">Power BI</div>
         <div class="skill">DAX</div>
         <div class="skill">Power Query</div>
@@ -319,54 +352,29 @@ footer {
         <div class="skill">Python</div>
         <div class="skill">Data Modelling</div>
         <div class="skill">Data Visualization</div>
+
     </div>
+
 </section>
+
 
 <!-- PROJECTS -->
 <section id="projects">
 
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">
+        Projects
+    </h2>
 
-    <!-- PROJECT 1 -->
+
+    <!-- ===================================================== -->
+    <!-- PROJECT 1 : BUSINESS INSIGHTS 360 -->
+    <!-- ===================================================== -->
+
     <div class="project">
 
-        <h3>AW Sales Analytics</h3>
-
-        <p class="project-description">
-            An Adventure Works sales analytics dashboard designed to monitor
-            revenue, targets, customer performance, product performance,
-            returns and geographic sales trends.
-        </p>
-
-        <div class="tags">
-            <span class="tag">Power BI</span>
-            <span class="tag">DAX</span>
-            <span class="tag">Power Query</span>
-            <span class="tag">Data Modelling</span>
-            <span class="tag">Sales Analytics</span>
-        </div>
-
-        <ul class="features">
-            <li>Revenue vs Target analysis</li>
-            <li>YoY Revenue Growth</li>
-            <li>Revenue by Category and Country</li>
-            <li>Top 5 Customers by Revenue</li>
-            <li>Product-level performance analysis</li>
-            <li>Return Quantity and Return Rate analysis</li>
-        </ul>
-
-        <div class="gallery">
-            <img src="images/aw-sales-1.png" alt="AW Sales Analytics Top Line">
-            <img src="images/aw-sales-2.png" alt="AW Sales Analytics Product Detail">
-        </div>
-
-    </div>
-
-
-    <!-- PROJECT 2 -->
-    <div class="project">
-
-        <h3>Business Insights 360 — P&amp;L Analysis</h3>
+        <h3>
+            Business Insights 360 — P&amp;L Analysis
+        </h3>
 
         <p class="project-description">
             A comprehensive business intelligence dashboard covering Finance,
@@ -375,39 +383,186 @@ footer {
         </p>
 
         <div class="tags">
+
             <span class="tag">Power BI</span>
             <span class="tag">DAX</span>
             <span class="tag">Finance</span>
             <span class="tag">Sales</span>
             <span class="tag">Marketing</span>
             <span class="tag">Supply Chain</span>
+
         </div>
 
         <ul class="features">
-            <li>Net Sales, Gross Margin and Net Profit analysis</li>
-            <li>COGS and Operating Expense analysis</li>
-            <li>Customer, Region and Segment performance</li>
-            <li>Marketing and product performance analysis</li>
-            <li>Forecast accuracy and supply chain metrics</li>
-            <li>Executive-level business KPIs and insights</li>
+
+            <li>
+                Net Sales, Gross Margin and Net Profit analysis
+            </li>
+
+            <li>
+                COGS and Operating Expense analysis
+            </li>
+
+            <li>
+                Customer, Region and Segment performance
+            </li>
+
+            <li>
+                Marketing and product performance analysis
+            </li>
+
+            <li>
+                Forecast accuracy and supply chain metrics
+            </li>
+
+            <li>
+                Executive-level business KPIs and insights
+            </li>
+
         </ul>
 
+
         <div class="gallery">
-            <img src="images/business-insights-home.png" alt="Business Insights 360 Home">
-            <img src="images/business-insights-finance.png" alt="Business Insights 360 Finance">
-            <img src="images/business-insights-sales.png" alt="Business Insights 360 Sales">
-            <img src="images/business-insights-marketing.png" alt="Business Insights 360 Marketing">
-            <img src="images/business-insights-supply-chain.png" alt="Business Insights 360 Supply Chain">
-            <img src="images/business-insights-executive.png" alt="Business Insights 360 Executive">
+
+            <img
+                src="images/business-insights-home.png"
+                alt="Business Insights 360 Home"
+            >
+
+            <img
+                src="images/business-insights-finance.png"
+                alt="Business Insights 360 Finance"
+            >
+
+            <img
+                src="images/business-insights-sales.png"
+                alt="Business Insights 360 Sales"
+            >
+
+            <img
+                src="images/business-insights-marketing.png"
+                alt="Business Insights 360 Marketing"
+            >
+
+            <img
+                src="images/business-insights-supply-chain.png"
+                alt="Business Insights 360 Supply Chain"
+            >
+
+            <img
+                src="images/business-insights-executive.png"
+                alt="Business Insights 360 Executive"
+            >
+
         </div>
 
     </div>
 
 
-    <!-- PROJECT 3 -->
+    <!-- ===================================================== -->
+    <!-- PROJECT 2 : AW SALES ANALYTICS -->
+    <!-- ===================================================== -->
+
     <div class="project">
 
-        <h3>Pizza Sales &amp; Performance Dashboard</h3>
+        <h3>
+            AW Sales Analytics
+        </h3>
+
+        <p class="project-description">
+            An Adventure Works sales analytics dashboard designed to monitor
+            revenue, targets, customer performance, product performance,
+            returns and geographic sales trends.
+        </p>
+
+        <div class="tags">
+
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Power Query</span>
+            <span class="tag">Data Modelling</span>
+            <span class="tag">Sales Analytics</span>
+
+        </div>
+
+        <ul class="features">
+
+            <li>
+                Revenue vs Target analysis
+            </li>
+
+            <li>
+                YoY Revenue Growth
+            </li>
+
+            <li>
+                Revenue by Category and Country
+            </li>
+
+            <li>
+                Top 5 Customers by Revenue
+            </li>
+
+            <li>
+                Product-level performance analysis
+            </li>
+
+            <li>
+                Return Quantity and Return Rate analysis
+            </li>
+
+            <li>
+                Key Influencers analysis for Revenue and Order Quantity
+            </li>
+
+            <li>
+                Revenue Decomposition Tree analysis
+            </li>
+
+        </ul>
+
+
+        <div class="gallery">
+
+            <img
+                src="images/aw-sales-1.png"
+                alt="AW Sales Analytics Top Line"
+            >
+
+            <img
+                src="images/aw-sales-2.png"
+                alt="AW Sales Analytics Product Detail"
+            >
+
+            <img
+                src="images/aw-sales-3.png"
+                alt="AW Sales Analytics Key Influencers Order Quantity"
+            >
+
+            <img
+                src="images/aw-sales-4.png"
+                alt="AW Sales Analytics Key Influencers Revenue"
+            >
+
+            <img
+                src="images/aw-sales-5.png"
+                alt="AW Sales Analytics Revenue Decomposition Tree"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- PROJECT 3 : PIZZA SALES -->
+    <!-- ===================================================== -->
+
+    <div class="project">
+
+        <h3>
+            Pizza Sales &amp; Performance Dashboard
+        </h3>
 
         <p class="project-description">
             A sales performance dashboard analyzing pizza revenue, orders,
@@ -416,52 +571,96 @@ footer {
         </p>
 
         <div class="tags">
+
             <span class="tag">Power BI</span>
             <span class="tag">DAX</span>
             <span class="tag">Sales Analytics</span>
             <span class="tag">Data Visualization</span>
+
         </div>
 
         <ul class="features">
-            <li>Total Revenue and Total Orders analysis</li>
-            <li>Total Pizzas Sold and Average Order Value</li>
-            <li>Daily and Monthly order trends</li>
-            <li>Sales by Pizza Category and Size</li>
-            <li>Top 5 and Bottom 5 pizzas</li>
-            <li>Revenue, Quantity and Order performance</li>
+
+            <li>
+                Total Revenue and Total Orders analysis
+            </li>
+
+            <li>
+                Total Pizzas Sold and Average Order Value
+            </li>
+
+            <li>
+                Daily and Monthly order trends
+            </li>
+
+            <li>
+                Sales by Pizza Category and Size
+            </li>
+
+            <li>
+                Top 5 and Bottom 5 pizzas
+            </li>
+
+            <li>
+                Revenue, Quantity and Order performance
+            </li>
+
         </ul>
 
+
         <div class="gallery">
-            <img src="images/pizza-sales-home.png" alt="Pizza Sales Dashboard">
-            <img src="images/pizza-sales-best-worst.png" alt="Pizza Best Worst Sellers">
+
+            <img
+                src="images/pizza-sales-home.png"
+                alt="Pizza Sales Dashboard"
+            >
+
+            <img
+                src="images/pizza-sales-best-worst.png"
+                alt="Pizza Best Worst Sellers"
+            >
+
         </div>
 
     </div>
 
 </section>
 
+
 <!-- CONTACT -->
 <section id="contact" class="contact">
 
-    <h2 class="section-title">Let's Connect</h2>
+    <h2 class="section-title">
+        Let's Connect
+    </h2>
 
     <p>
         Interested in data analytics, Power BI or business intelligence?
         Feel free to connect with me.
     </p>
 
-    <a href="https://github.com/rushikeshjadhav0018-web" target="_blank">
+    <a
+        href="https://github.com/rushikeshjadhav0018-web"
+        target="_blank"
+    >
         GitHub
     </a>
 
-    <a href="#" target="_blank">
+    <a
+        href="#"
+        target="_blank"
+    >
         LinkedIn
     </a>
 
 </section>
 
+
+<!-- FOOTER -->
 <footer>
+
     © 2026 Rushikesh Jadhav | Data Analyst Portfolio
+
 </footer>
 
 </body>

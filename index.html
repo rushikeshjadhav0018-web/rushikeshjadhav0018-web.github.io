@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rushikesh Jadhav | Data Analyst Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(11, 17, 32, 0.95);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            background: linear-gradient(135deg, #0b1120, #111827);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            max-width: 650px;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #38bdf8;
+            color: #07111f;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: bold;
+            color: #e2e8f0;
+        }
+
+        .skill:hover {
+            border-color: #38bdf8;
+            transform: translateY(-4px);
+            transition: 0.3s;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 15px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .project-number {
+            color: #38bdf8;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .tags {
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #7dd3fc;
+            padding: 6px 10px;
+            border-radius: 5px;
+            margin: 3px;
+            font-size: 12px;
+        }
+
+        .project-btn {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+        }
+
+        .contact p {
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav div:last-child {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">RJ.</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Hi, I'm <span>Rushikesh Jadhav</span></h1>
+
+            <h2>Data Analyst | Power BI Developer</h2>
+
+            <p>
+                I create interactive dashboards and data-driven solutions
+                using Power BI, SQL, Excel and Python. I enjoy transforming
+                raw data into meaningful business insights.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <div class="about">
+
+            <p>
+                I'm a Data Analyst with experience working with data,
+                dashboards and business reporting. My key areas of interest
+                include Power BI, SQL, Excel and Python.
+            </p>
+
+            <br>
+
+            <p>
+                I focus on data cleaning, data modelling, DAX,
+                visualization and creating dashboards that help users
+                understand business performance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2 class="section-title">
+            My <span>Skills</span>
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill">Power BI</div>
+
+            <div class="skill">DAX</div>
+
+            <div class="skill">Power Query</div>
+
+            <div class="skill">SQL</div>
+
+            <div class="skill">Excel</div>
+
+            <div class="skill">Python</div>
+
+            <div class="skill">Data Modelling</div>
+
+            <div class="skill">Data Visualization</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2 class="section-title">
+            Featured <span>Projects</span>
+        </h2>
+
+        <div class="projects">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 01
+                </div>
+
+                <h3>AW Sales Project</h3>
+
+                <p>
+                    Interactive Power BI sales dashboard designed to
+                    analyze sales performance, business KPIs and trends.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Power Query</span>
+                    <span class="tag">Data Modeling</span>
+
+                </div>
+
+                <a href="#" class="project-btn">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 02
+                </div>
+
+                <h3>P&L Analysis</h3>
+
+                <p>
+                    Financial analysis dashboard focused on Profit &
+                    Loss reporting, financial KPIs and business performance.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Advanced DAX</span>
+                    <span class="tag">P&L</span>
+                    <span class="tag">Data Analysis</span>
+
+                </div>
+
+                <a href="#" class="project-btn">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 03
+                </div>
+
+                <h3>Blinks Sales Analysis</h3>
+
+                <p>
+                    Sales analytics dashboard created to explore sales
+                    performance, trends, KPIs and business insights.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Visualization</span>
+
+                </div>
+
+                <a href="#" class="project-btn">
+                    View Project →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            Let's <span>Connect</span>
+        </h2>
+
+        <p>
+            I'm open to Data Analyst opportunities and collaborations.
+        </p>
+
+        <a href="#" class="btn">
+            LinkedIn
+        </a>
+
+        <a href="#" class="btn secondary">
+            GitHub
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Rushikesh Jadhav · Data Analyst Portfolio
+
+    </footer>
+
+
+</body>
+</html>
